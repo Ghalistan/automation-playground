@@ -1,0 +1,26 @@
+[project]
+name = "py-pw"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gagah Ghalistan",email = "gghalistan@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pytest-playwright (>=0.7.0,<0.8.0)",
+    "playwright (>=1.50.0,<2.0.0)",
+    "faker (>=36.1.1,<37.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "project"
+packages = [{ include = "pages", from = "src" }]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
