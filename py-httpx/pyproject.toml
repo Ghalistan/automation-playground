@@ -1,0 +1,22 @@
+[project]
+name = "py-httpx"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gagah Ghalistan",email = "gghalistan@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx (>=0.28.1,<0.29.0)",
+    "pytest (>=8.3.4,<9.0.0)",
+    "faker (>=36.1.1,<37.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
