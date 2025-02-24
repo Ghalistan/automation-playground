@@ -15,6 +15,6 @@ class ReqResUser(HttpUser):
         if response.status_code == 201:
             body = response.json()
             userId = body.get("id")
-            self.client.get(f"/api/users/{userId}")
+            self.client.get(f"/api/users/2")
             self.client.put(f"/api/users/{userId}", json={ "name": f"{name} edited", "job": f"{job} edited"})
             self.client.delete(f"/api/users/{userId}")
