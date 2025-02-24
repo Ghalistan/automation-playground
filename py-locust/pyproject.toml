@@ -1,0 +1,18 @@
+[project]
+name = "py-locust"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gagah Ghalistan",email = "gghalistan@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "locust (>=2.32.10,<3.0.0)",
+    "faker (>=36.1.1,<37.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
